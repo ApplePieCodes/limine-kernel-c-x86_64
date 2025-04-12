@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "limine.h": "c",
+        "fb.h": "c",
+        "flanterm.h": "c"
+    }
+}
