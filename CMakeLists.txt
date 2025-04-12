@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 project(kernel C)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -ffreestanding -Wall -Wextra -O2 -mcmodel=kernel -mgeneral-regs-only")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -ffreestanding -Wall -Wextra -O2 -mcmodel=kernel -mgeneral-regs-only -mno-red-zone -mno-sse -mno-sse2 -mno-mmx -fno-exceptions -fno-omit-frame-pointer")
 
 set(SOURCES 
     src/kmain.c
